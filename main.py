@@ -3,16 +3,6 @@ from PIL import Image, ImageDraw
 from io import BytesIO
 from math import pi
 
-
-class Event:
-    '''
-    事件类
-    '''
-
-    def __init__(self, args=None):
-        self.args = args
-
-
 class Model:
     '''
     模型类
@@ -24,7 +14,6 @@ class Model:
 
     def setRadius(self, radius):
         self._radius = float(radius)
-        event = Event(self._radius)
 
     def getRadius(self):
         return self._radius
